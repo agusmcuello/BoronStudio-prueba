@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="./index.css" />
+    <script src="./index.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <!--Barra de navegación sin scrollear-->
+    <nav>
+      <svg height="36">
+        <g clip-path="url(#clip0_1_237)">
+          <path
+            d="M57.3109 34.2139C55.2474 33.316 53.3705 32.0385 51.7777 30.4477C50.1849 28.8533 48.9041 26.9749 48.0012 24.9092C47.0857 22.7454 46.6152 20.4191 46.6179 18.0692C46.6152 15.7238 47.0857 13.4021 48.0012 11.2431C48.9024 9.17648 50.1834 7.29773 51.7777 5.70464C53.3632 4.10857 55.2421 2.83443 57.3109 1.95234C59.4662 1.03039 61.7868 0.559205 64.1306 0.567724C66.4745 0.557639 68.7957 1.02889 70.9504 1.95234C73.0167 2.83898 74.8948 4.11257 76.4837 5.70464C78.0711 7.29466 79.339 9.1748 80.2186 11.2431C81.1397 13.4003 81.6104 15.7233 81.6019 18.0692C81.6107 20.4197 81.14 22.7473 80.2186 24.9092C79.3357 26.9757 78.0683 28.8553 76.4837 30.4477C74.8882 32.0353 73.0119 33.3123 70.9504 34.2139C68.7938 35.1314 66.4739 35.6024 64.1306 35.5985C61.7874 35.6012 59.4679 35.1303 57.3109 34.2139Z"
+            fill="#1A1A1A"
+          />
+          <path
+            d="M115.922 19.3708C118.395 19.3501 120.761 18.3552 122.507 16.6016C123.413 15.725 124.127 14.669 124.604 13.5009C125.08 12.3328 125.308 11.0781 125.273 9.81695C125.281 7.27057 124.287 4.8235 122.507 3.00466C121.658 2.09762 120.637 1.36848 119.505 0.859793C118.372 0.351104 117.149 0.0730024 115.908 0.0415649H103.334C103.099 0.0415649 103.818 0.678495 103.818 0.913879V35.28C103.818 35.5154 103.099 36.0416 103.334 36.0416H124.222C124.346 36.0416 124.443 35.7785 124.512 35.6677C124.546 35.6013 124.564 35.5277 124.564 35.4531C124.564 35.3784 124.546 35.3049 124.512 35.2385L115.922 19.3708Z"
+            fill="#1A1A1A"
+          />
+          <path
+            d="M156.301 34.2139C154.239 33.3135 152.362 32.0363 150.768 30.4477C149.175 28.8534 147.894 26.9749 146.991 24.9093C146.076 22.7455 145.605 20.4191 145.608 18.0693C145.605 15.7239 146.076 13.4021 146.991 11.2431C147.892 9.1765 149.173 7.29776 150.768 5.70466C152.356 4.11154 154.234 2.8378 156.301 1.95236C158.456 1.03042 160.777 0.55923 163.121 0.567749C165.469 0.558901 167.794 1.03006 169.954 1.95236C172.021 2.8378 173.9 4.11154 175.488 5.70466C177.08 7.2909 178.348 9.17199 179.223 11.2431C180.15 13.3982 180.622 15.7226 180.606 18.0693C180.621 20.4204 180.15 22.7493 179.223 24.9093C178.345 26.9786 177.077 28.859 175.488 30.4477C173.893 32.0363 172.016 33.3135 169.954 34.2139C167.792 35.1303 165.468 35.6012 163.121 35.5985C160.778 35.6012 158.458 35.1303 156.301 34.2139Z"
+            fill="#1A1A1A"
+          />
+          <path
+            d="M14.2759 35.7507H0V0.761475H14.2344C20.9711 0.761475 25.4115 4.49996 25.4115 9.95534C25.4019 11.5556 24.9308 13.1191 24.0547 14.4578C23.1786 15.7965 21.935 16.8534 20.4731 17.5015C22.2387 18.1089 23.775 19.2451 24.8737 20.756C25.9724 22.2668 26.5802 24.0793 26.615 25.9477C26.615 31.7908 21.7182 35.7507 14.2759 35.7507Z"
+            fill="#1A1A1A"
+          />
+          <path
+            d="M8.94995 29.3816H12.851C15.6176 29.3816 17.2085 27.8446 17.2085 25.8092C17.2085 23.7739 15.5347 22.2369 13.0585 22.2369H9.19902V9.51233H13.1276"
+            stroke="#F2F2F2"
+          />
+          <path
+            d="M230.087 10.1077C229.449 8.17644 228.374 6.41856 226.947 4.9708C225.525 3.50315 223.789 2.37656 221.87 1.67541C220.392 1.12105 218.828 0.835053 217.25 0.830811C215.654 0.835235 214.071 1.12113 212.574 1.67541C210.643 2.37573 208.893 3.502 207.456 4.9708C206.028 6.41856 204.954 8.17644 204.316 10.1077C202.933 14.1231 203.486 18.4985 203.486 22.6662V34.6154C203.486 34.837 203.486 35.4323 203.679 35.5708C203.873 35.7092 203.998 36 204.164 36H230.281C230.447 36 230.613 35.6815 230.751 35.5708C230.889 35.46 230.931 35.0031 230.931 34.7677C230.931 30.7939 230.931 26.7231 230.931 22.7493C230.931 18.7754 231.401 14.1231 230.087 10.1077Z"
+            fill="#1A1A1A"
+          />
+        </g>
+      </svg>
+      <ul>
+        <li><a href="#about">Acerca de</a></li>
+        <li><a href="#proyects">Proyectos</a></li>
+        <li><a href="#repository">Repositorios</a></li>
+        <li><a href="#news">Novedades</a></li>
+        <li><a href="#contact">Contacto</a></li>
+        <li>EN/<b>ES</b></li>
+        <svg width="33" height="33" fill="none">
+          <path
+            d="M20.5 20.5L31.5 31.5"
+            stroke="black"
+            stroke-width="2"
+            stroke-linecap="square"
+          />
+          <path
+            d="M12.5 24C18.8513 24 24 18.8513 24 12.5C24 6.14873 18.8513 1 12.5 1C6.14873 1 1 6.14873 1 12.5C1 18.8513 6.14873 24 12.5 24Z"
+            stroke="black"
+            stroke-width="2"
+          />
+        </svg>
+      </ul>
+    </nav>
+
+    <!--Barra de navegación que se muestra una vez que el usuario scrollea-->
+    <div class="navbar">
+      <svg height="62" fill="none">
+        <path
+          d="M26.1066 60.439H3.84106V5.95282H26.0241C36.5267 5.95282 43.4584 11.7893 43.4584 20.2739C43.4584 25.3302 40.6603 29.5387 35.7541 32.0293C41.7556 34.52 45.3265 39.3437 45.3265 45.1801C45.3265 54.2874 37.7045 60.439 26.1066 60.439Z"
+          stroke="url(#paint0_linear_1_421)"
+          stroke-width="1.15"
+        />
+        <path
+          d="M17.802 50.5215H23.871C28.2596 50.5215 30.6753 48.1434 30.6753 44.9701C30.6753 41.7968 28.0496 39.4112 24.2161 39.4112L18.2146 39.3737V19.5613H24.3361"
+          stroke="url(#paint1_linear_1_421)"
+          stroke-width="1.15"
+        />
+        <path
+          d="M22.2655 54.9251H0V0.438965H22.2131C32.7157 0.438965 39.6474 6.27542 39.6474 14.7601C39.6474 19.8238 36.8417 24.0249 31.943 26.5155C37.9445 29.0061 41.5154 33.8298 41.5154 39.6738C41.4929 48.7811 33.8634 54.9251 22.2655 54.9251Z"
+          fill="#1A1A1A"
+        />
+        <path
+          d="M13.9612 45.0152H20.0377C24.4188 45.0152 26.8344 42.6296 26.8344 39.4563C26.8344 36.283 24.2088 33.8974 20.3828 33.8974L14.3813 33.8599V14.0474H20.5028"
+          stroke="url(#paint2_linear_1_421)"
+          stroke-width="1.15"
+        />
+        <defs>
+          <linearGradient
+            id="paint0_linear_1_421"
+            x1="3.41346"
+            y1="33.1921"
+            x2="45.7616"
+            y2="33.1921"
+            gradientUnits="userSpaceOnUse"
+          >
+            <stop stop-color="#EF4900" />
+            <stop offset="1" stop-color="#643C68" />
+          </linearGradient>
+          <linearGradient
+            id="paint1_linear_1_421"
+            x1="17.802"
+            y1="35.0377"
+            x2="31.1029"
+            y2="35.0377"
+            gradientUnits="userSpaceOnUse"
+          >
+            <stop stop-color="#EF4900" />
+            <stop offset="1" stop-color="#643C68" />
+          </linearGradient>
+          <linearGradient
+            id="paint2_linear_1_421"
+            x1="20.6154"
+            y1="45.4428"
+            x2="20.6154"
+            y2="13.6198"
+            gradientUnits="userSpaceOnUse"
+          >
+            <stop stop-color="#EF4900" />
+            <stop offset="1" stop-color="#643C68" />
+          </linearGradient>
+        </defs>
+      </svg>
+      <div class="container-button">
+        <button class="button" id="button" onclick="openNavBar()">
+          <span>Menu</span>
+        </button>
+        <div class="lines">
+          <span class="line"></span>
+          <span class="line-two"></span>
+        </div>
+      </div>
+    </div>
+
+    <!--Módulo Header-->
+    <header>
+      <h1>Bienvenidos</h1>
+      <p>
+        Desarrollamos y <span>promovemos investigación,</span> innovación, y divulgación
+        sobre tecnología digital y aprendizaje, en Uruguay y América Latina
+      </p>
+    </header>
+
+    <!--Aside Navbar, disponible una vez que el usuario scrollea-->
+    <aside class="aside" id="aside">
+      <button onclick="closeNavBar()">
+        <p>
+          Cerrar
+          <svg width="16" height="16">
+            <path
+              d="M1 15.0312L15.0312 1.00002"
+              stroke="white"
+              stroke-width="2"
+            />
+            <path d="M1 1L15.0312 15.0312" stroke="white" stroke-width="2" />
+          </svg>
+        </p>
+      </button>
+      <ul>
+        <li><a href="#about">Acerca de</a></li>
+        <li><a href="#proyects">Proyectos</a></li>
+        <li><a href="#repository">Repositorios</a></li>
+        <li><a href="#news">Novedades</a></li>
+        <li><a href="#contact">Contacto</a></li>
+      </ul>
+      <div id="search">
+        <svg width="33" height="33" fill="none">
+          <path
+            d="M20.5 20.5L31.5 31.5"
+            stroke="white"
+            stroke-width="2"
+            stroke-linecap="square"
+          />
+          <path
+            d="M12.5 24C18.8513 24 24 18.8513 24 12.5C24 6.14873 18.8513 1 12.5 1C6.14873 1 1 6.14873 1 12.5C1 18.8513 6.14873 24 12.5 24Z"
+            stroke="white"
+            stroke-width="2"
+          />
+        </svg>
+        <p>EN/<b>ES</b></p>
+      </div>
+      <div class="nav-links">
+        <button id="subscription">
+          <p>SUSCRIBITE A NUESTRO NEWSLETER</p>
+          <svg width="20" height="15" fill="none">
+            <path
+              d="M11.4395 1L17.9395 7.5L11.4395 14"
+              stroke="black"
+              stroke-width="2"
+            />
+            <path
+              d="M17.4689 7.5H1"
+              stroke="black"
+              stroke-width="2"
+              stroke-linecap="square"
+            />
+          </svg>
+        </button>
+        <svg width="37" height="26">
+          <path
+            d="M9.66747 0C0 0 0 2.78945 0 9.64831V16.3517C0 22.8749 1.36913 26 9.66747 26H27.3325C34.8275 26 37 24.1731 37 16.3517V9.64831C37 2.42865 36.6347 0 27.3325 0H9.66747ZM14.72 7.57223L24.6927 12.8169L14.72 18.0953V7.57223Z"
+            fill="#77D7DB"
+          />
+        </svg>
+        <svg width="34" height="27">
+          <path
+            d="M10.6803 26.9999C23.5102 26.9999 30.5306 16.848 30.5306 8.05925C30.5306 7.77364 30.5306 7.48802 30.517 7.20241C31.8775 6.26771 33.0612 5.08642 34 3.74928C32.7483 4.28154 31.4014 4.632 29.9864 4.80076C31.4286 3.9829 32.5306 2.67176 33.0612 1.11393C31.7143 1.87986 30.2177 2.42512 28.6259 2.72371C27.3469 1.42551 25.5374 0.620605 23.5374 0.620605C19.6871 0.620605 16.5578 3.60651 16.5578 7.28041C16.5578 7.79969 16.6259 8.30585 16.7347 8.79916C10.9388 8.52654 5.79591 5.86537 2.35374 1.84096C1.7551 2.82759 1.41496 3.96988 1.41496 5.19019C1.41496 7.50097 2.65307 9.53919 4.51702 10.7335C3.37416 10.6946 2.29932 10.3961 1.36054 9.90274C1.36054 9.9287 1.36054 9.95468 1.36054 9.99362C1.36054 13.2131 3.7687 15.9133 6.95237 16.5235C6.36734 16.6793 5.7551 16.7572 5.11564 16.7572C4.66666 16.7572 4.23129 16.7183 3.80952 16.6404C4.69388 19.2887 7.27891 21.21 10.3265 21.2619C7.93197 23.0534 4.92518 24.118 1.65987 24.118C1.10205 24.118 0.544218 24.092 0 24.0271C3.07483 25.8965 6.74831 26.9999 10.6803 26.9999Z"
+            fill="#77D7DB"
+          />
+        </svg>
+      </div>
+    </aside>
+
+    <!--Marquesinas infinitas-->
+
+    <section class="marquee">
+      <div class="desing">
+        <div class="container-h2"><h2>Diseño</h2></div>
+        <img class="marquee-img" src="./media/diseño.png" alt="desing-image" />
+        <div class="container-h2"><h2>Diseño</h2></div>
+        <img class="marquee-img" src="./media/diseño2.png" alt="desing-image" />
+        <div class="container-h2"><h2>Diseño</h2></div>
+        <img class="marquee-img" src="./media/diseño.png" alt="desing-image" />
+      </div>
+      <div class="technology">
+        <div class="container-h2"><h2>Tecnología</h2></div>
+        <img
+          class="marquee-img2"
+          src="./media/tecnologia.png"
+          alt="desing-image"
+        />
+        <div class="container-h2"><h2>Innovación</h2></div>
+        <img
+          class="marquee-img2"
+          src="./media/tecnologia2.jpg"
+          alt="desing-image"
+        />
+        <div class="container-h2"><h2>Tecnología</h2></div>
+        <img
+          class="marquee-img2"
+          src="./media/tecnologia.png"
+          alt="desing-image"
+        />
+      </div>
+      <div class="desing">
+        <div class="container-h2"><h2>Uruguay</h2></div>
+        <img class="marquee-img" src="./media/uruguay.png" alt="desing-image" />
+        <div class="container-h2"><h2>Paisaje</h2></div>
+        <img
+          class="marquee-img"
+          src="./media/uruguay2.jpg"
+          alt="desing-image"
+        />
+        <div class="container-h2"><h2>Uruguay</h2></div>
+        <img class="marquee-img" src="./media/uruguay.png" alt="desing-image" />
+      </div>
+    </section>
+
+    <!--Módulo Texto Full Width-->
+    <section class="about" id="about">
+      <p>
+        Somos una organización autónoma que busca resolver desafíos relacionados
+        con el aprendizaje y la mediación de las tecnologías, a través de
+        metodologías innovadoras y un abordaje práctico, social y participativo
+      </p>
+    </section>
+
+    <!--Módulo Texto + Imagen-->
+    <section class="focus">
+      <article class="focus-info">
+        <h2>NUESTRO ENFOQUE</h2>
+        <p>
+          Está orientada a problematizar y aportar ideas y soluciones a la
+          implementación actual y futura de Boron Studio y de otros actores
+          nacionales e internacionales
+        </p>
+      </article>
+      <img src="./media/image1.png" alt="image1" width="50%" />
+    </section>
+
+    <!--Módulo Imágen + Slider-->
+    <section class="proyects" id="proyects">
+      <img src="./media/image2.png" alt="image2" width="50%" />
+      <article class="tweets">
+        <h2>SEGUINOS EN TWITTER</h2>
+        <div class="proyects-title">
+          <svg
+            width="38"
+            height="31"
+            viewBox="0 0 38 31"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M11.9368 30.2413C26.2761 30.2413 34.1224 18.8951 34.1224 9.07232C34.1224 8.75312 34.1224 8.43389 34.1072 8.11468C35.6278 7.07002 36.9508 5.74975 38 4.2553C36.601 4.85018 35.0956 5.24186 33.5142 5.43049C35.126 4.5164 36.3577 3.05101 36.9508 1.30991C35.4454 2.16595 33.7727 2.77536 31.9936 3.10907C30.5642 1.65815 28.5418 0.758545 26.3065 0.758545C22.0032 0.758545 18.5058 4.09574 18.5058 8.20185C18.5058 8.78222 18.5818 9.34794 18.7035 9.89929C12.2257 9.59459 6.47779 6.62034 2.63065 2.12247C1.96158 3.22518 1.58143 4.50185 1.58143 5.86572C1.58143 8.44836 2.9652 10.7264 5.04843 12.0612C3.77112 12.0177 2.56982 11.684 1.5206 11.1327C1.5206 11.1617 1.5206 11.1907 1.5206 11.2343C1.5206 14.8326 4.21207 17.8504 7.7703 18.5323C7.11643 18.7064 6.43217 18.7935 5.71748 18.7935C5.21568 18.7935 4.72909 18.7501 4.2577 18.663C5.2461 21.6229 8.13525 23.7702 11.5414 23.8283C8.86514 25.8305 5.50461 27.0203 1.85515 27.0203C1.2317 27.0203 0.608243 26.9913 0 26.9187C3.43657 29.0081 7.54222 30.2413 11.9368 30.2413Z"
+              fill="white"
+            />
+          </svg>
+          <h1>Boronstudio</h1>
+          <p id="twitter">@Boronstudio</p>
+        </div>
+        <div class="slider">
+          <p class="tweet-time"><i>2hs</i></p>
+          <div class="slices">
+            <p class="slice">
+              &#128204;<span>#OportunidadLaboral</span>Llamado abierto para
+              sumarse al equipo de<span> @Boronstudio</span> master digital.👨‍💻
+              👩‍💻<br />
+              Más información &#128073; <span>https://bit.ly/20obIHS</span>
+            </p>
+            <p class="slice">
+              &#128204;<span>#Retiro</span> Parte del equipo de
+              <span>@Boronstudio</span> ha disfrutado en las últimas semanas de
+              un retiro laboral para disfrutar <br />
+              de la <span>#CostaAmalfitana</span> &#127881; &#x1F31E; &#128076;
+            </p>
+          </div>
+          <ul class="arrows">
+            <button class="arrow-left" onclick="moveLeft()">
+              <svg
+                width="39"
+                height="29"
+                viewBox="0 0 39 29"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M15.5 1L2 14.5L15.5 28"
+                  stroke="black"
+                  stroke-width="2"
+                />
+                <path
+                  d="M2.97807 14.5H37.1826"
+                  stroke="black"
+                  stroke-width="2"
+                  stroke-linecap="square"
+                />
+              </svg>
+            </button>
+            <button class="arrow-right" onclick="moveRight()">
+              <svg
+                width="39"
+                height="29"
+                viewBox="0 0 39 29"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M23.5 1L37 14.5L23.5 28"
+                  stroke="black"
+                  stroke-width="2"
+                />
+                <path
+                  d="M36.0219 14.5H1.81738"
+                  stroke="black"
+                  stroke-width="2"
+                  stroke-linecap="square"
+                />
+              </svg>
+            </button>
+          </ul>
+        </div>
+      </article>
+    </section>
+
+    <!--Módulo Repositorio-->
+    <section class="repository" id="repository">
+      <div class="repo-titles">
+        <h1>Repositorio</h1>
+        <h3>
+          Repositorio institucional <br />
+          de Boron Studio
+        </h3>
+      </div>
+      <ul>
+        <hr />
+        <li>
+          <div class="link-container">
+            <p>Autor</p>
+            <img
+              class="image-link"
+              id="author"
+              src="./media/author.jpg"
+              alt="image-repo"
+            />
+            <button
+              onmouseover="showAuthorImage()"
+              onmouseout="removeAuthorImage()"
+            >
+              <svg width="38" height="29" viewBox="0 0 38 29" fill="none">
+                <path
+                  d="M22.6826 1L36.1826 14.5L22.6826 28"
+                  stroke="black"
+                  stroke-width="2"
+                />
+                <path d="M35.2045 14.5H1" stroke="black" stroke-width="2" />
+              </svg>
+            </button>
+          </div>
+        </li>
+        <hr />
+        <li>
+          <div class="link-container">
+            <p>Título</p>
+            <img
+              class="image-link"
+              id="title"
+              src="./media/title.png"
+              alt="image-repo"
+            />
+            <button
+              onmouseover="showTitleImage()"
+              onmouseout="removeTitleImage()"
+            >
+              <svg width="38" height="29" fill="none">
+                <path
+                  d="M22.6826 1L36.1826 14.5L22.6826 28"
+                  stroke="black"
+                  stroke-width="2"
+                />
+                <path d="M35.2045 14.5H1" stroke="black" stroke-width="2" />
+              </svg>
+            </button>
+          </div>
+        </li>
+        <hr />
+        <li>
+          <div class="link-container">
+            <p>Líneas de navegación</p>
+            <img
+              class="image-link"
+              id="navegation"
+              src="./media/navegation.jpg"
+              alt="image-repo"
+            />
+            <button
+              onmouseover="showNavegationImage()"
+              onmouseout="removeNavegationImage()"
+            >
+              <svg width="38" height="29" fill="none">
+                <path
+                  d="M22.6826 1L36.1826 14.5L22.6826 28"
+                  stroke="black"
+                  stroke-width="2"
+                />
+                <path d="M35.2045 14.5H1" stroke="black" stroke-width="2" />
+              </svg>
+            </button>
+          </div>
+        </li>
+        <hr />
+        <li>
+          <div class="link-container">
+            <p>Descripciones</p>
+            <img
+              class="image-link"
+              id="description"
+              src="./media/description.jpg"
+              alt="image-repo"
+            />
+            <button
+              onmouseover="showDescriptionImage()"
+              onmouseout="removeDescriptionImage()"
+            >
+              <svg width="38" height="29" fill="none">
+                <path
+                  d="M22.6826 1L36.1826 14.5L22.6826 28"
+                  stroke="black"
+                  stroke-width="2"
+                />
+                <path d="M35.2045 14.5H1" stroke="black" stroke-width="2" />
+              </svg>
+            </button>
+          </div>
+        </li>
+        <hr />
+      </ul>
+    </section>
+
+    <!--Módulo Novedades-->
+    <section class="news-container" id="news">
+      <h1>Novedades</h1>
+      <div class="news-list">
+        <div
+          class="news-hover"
+          onmouseover="showFirstImage()"
+          onmouseout="removeFirstImage()"
+        >
+          <img
+            class="news-image"
+            id="image1"
+            src="./media/novedad1.png"
+            alt="news-image"
+          />
+          <article class="news" id="first-news">
+            <div class="news-title">
+              <h2>Webinar</h2>
+              <svg width="28" height="28" viewBox="0 0 28 28">
+                <path
+                  d="M11.5078 16.6914H0.625V11.8242H11.5078V0.667969H16.4297V11.8242H27.3398V16.6914H16.4297V27.793H11.5078V16.6914Z"
+                  fill="black"
+                />
+              </svg>
+            </div>
+            <p>Boron Studio invita a webinar sobre educación híbrida</p>
+          </article>
+        </div>
+        <div
+          class="news-hover"
+          onmouseover="showSecondImage()"
+          onmouseout="removeSecondImage()"
+        >
+          <img
+            class="news-image"
+            id="image2"
+            src="./media/novedad2.png"
+            alt="news-image"
+          />
+          <article class="news" id="second-news">
+            <div class="news-title">
+              <h2>Evento</h2>
+              <svg width="28" height="28" viewBox="0 0 28 28">
+                <path
+                  d="M11.5078 16.6914H0.625V11.8242H11.5078V0.667969H16.4297V11.8242H27.3398V16.6914H16.4297V27.793H11.5078V16.6914Z"
+                  fill="black"
+                />
+              </svg>
+            </div>
+            <p>Boron Studio invita a webinar sobre educación híbrida</p>
+          </article>
+        </div>
+        <div
+          class="news-hover"
+          onmouseover="showThirdImage()"
+          onmouseout="removeThirdImage()"
+        >
+          <img
+            class="news-image"
+            id="image3"
+            src="./media/novedad3.png"
+            alt="news-image"
+          />
+          <article class="news" id="third-news">
+            <div class="news-title">
+              <h2>Evento</h2>
+              <svg width="28" height="28" viewBox="0 0 28 28">
+                <path
+                  d="M11.5078 16.6914H0.625V11.8242H11.5078V0.667969H16.4297V11.8242H27.3398V16.6914H16.4297V27.793H11.5078V16.6914Z"
+                  fill="black"
+                />
+              </svg>
+            </div>
+            <p>
+              Boron Studio presenta experiencia de educación a distancia en
+              México
+            </p>
+          </article>
+        </div>
+        <div
+          class="news-hover"
+          onmouseover="showFourImage()"
+          onmouseout="removeFourImage()"
+        >
+          <img
+            class="news-image"
+            id="image4"
+            src="./media/novedad4.png"
+            alt="news-image"
+          />
+          <article class="news" id="four-news">
+            <div class="news-title">
+              <h2>Publicación</h2>
+              <svg width="28" height="28" viewBox="0 0 28 28">
+                <path
+                  d="M11.5078 16.6914H0.625V11.8242H11.5078V0.667969H16.4297V11.8242H27.3398V16.6914H16.4297V27.793H11.5078V16.6914Z"
+                  fill="black"
+                />
+              </svg>
+            </div>
+            <p>
+              Publicación del libro "Técnología: Lo que puede y no puede hacer
+              por la educación"
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!--Módulo Footer-->
+    <footer class="footer" id="contact">
+      <div class="footer-info">
+        <svg class="boron" height="37" fill="none">
+          <g clip-path="url(#clip0_1_594)">
+            <path
+              d="M59.0473 35.1642C56.9212 34.2414 54.9874 32.9285 53.3464 31.2934C51.7054 29.6548 50.3857 27.7242 49.4555 25.6011C48.5122 23.3772 48.0275 20.9863 48.0303 18.5711C48.0275 16.1606 48.5122 13.7743 49.4555 11.5554C50.384 9.43134 51.7038 7.50041 53.3464 5.86306C54.98 4.22266 56.9158 2.91308 59.0473 2.00649C61.2678 1.05893 63.6588 0.574659 66.0736 0.583415C68.4886 0.57305 70.8801 1.05739 73.1001 2.00649C75.2291 2.91776 77.1641 4.22677 78.8011 5.86306C80.4366 7.49725 81.7429 9.42962 82.6491 11.5554C83.5981 13.7725 84.0831 16.16 84.0744 18.5711C84.0835 20.9869 83.5985 23.3791 82.6491 25.6011C81.7395 27.725 80.4336 29.6568 78.8011 31.2934C77.1572 32.9251 75.2241 34.2376 73.1001 35.1642C70.8782 36.1072 68.488 36.5913 66.0736 36.5873C63.6594 36.5901 61.2696 36.1061 59.0473 35.1642Z"
+              fill="white"
+            />
+            <path
+              d="M119.435 19.9089C121.983 19.8876 124.42 18.8651 126.219 17.0627C127.153 16.1618 127.889 15.0765 128.38 13.8759C128.87 12.6754 129.105 11.3859 129.069 10.0896C129.077 7.47254 128.053 4.95745 126.219 3.08809C125.344 2.15585 124.293 1.40654 123.126 0.883724C121.959 0.360906 120.699 0.0750353 119.421 0.0427246H106.465C106.223 0.0427246 106.964 0.697303 106.964 0.939227V36.26C106.964 36.5019 106.223 37.0427 106.465 37.0427H127.986C128.114 37.0427 128.214 36.7723 128.285 36.6585C128.32 36.5902 128.339 36.5146 128.339 36.4379C128.339 36.3612 128.32 36.2856 128.285 36.2173L119.435 19.9089Z"
+              fill="white"
+            />
+            <path
+              d="M161.037 35.1642C158.912 34.2387 156.979 32.9261 155.336 31.2934C153.695 29.6548 152.375 27.7241 151.445 25.6011C150.502 23.3772 150.017 20.9862 150.02 18.5711C150.017 16.1605 150.502 13.7743 151.445 11.5553C152.374 9.43131 153.694 7.50037 155.336 5.86302C156.972 4.22565 158.907 2.91649 161.037 2.00645C163.258 1.0589 165.649 0.574622 168.064 0.583378C170.483 0.574284 172.879 1.05853 175.104 2.00645C177.234 2.91649 179.169 4.22565 180.805 5.86302C182.445 7.49333 183.752 9.42667 184.653 11.5553C185.609 13.7703 186.095 16.1592 186.079 18.5711C186.095 20.9875 185.609 23.3811 184.653 25.6011C183.749 27.7279 182.442 29.6606 180.805 31.2934C179.162 32.9261 177.229 34.2387 175.104 35.1642C172.877 36.106 170.482 36.59 168.064 36.5872C165.649 36.5901 163.259 36.106 161.037 35.1642Z"
+              fill="white"
+            />
+            <path
+              d="M14.7085 36.7439H0V0.782715H14.6657C21.6066 0.782715 26.1816 4.625 26.1816 10.2319C26.1717 11.8767 25.6863 13.4836 24.7836 14.8594C23.881 16.2353 22.5997 17.3216 21.0935 17.9877C22.9126 18.612 24.4955 19.7797 25.6274 21.3326C26.7594 22.8854 27.3856 24.7482 27.4215 26.6685C27.4215 32.6739 22.3763 36.7439 14.7085 36.7439Z"
+              fill="white"
+            />
+            <path
+              d="M9.22119 30.1978H13.2405C16.0909 30.1978 17.73 28.6181 17.73 26.5262C17.73 24.4343 16.0054 22.8547 13.4543 22.8547H9.47781V9.77661H13.5254"
+              stroke="black"
+              stroke-width="0.25"
+            />
+            <path
+              d="M237.06 10.3885C236.402 8.4036 235.295 6.59689 233.824 5.10891C232.359 3.60049 230.571 2.44261 228.594 1.72198C227.071 1.15223 225.459 0.858242 223.833 0.853882C222.189 0.858429 220.558 1.1523 219.016 1.72198C217.026 2.44176 215.224 3.59932 213.743 5.10891C212.272 6.59689 211.165 8.4036 210.507 10.3885C209.082 14.5154 209.652 19.0124 209.652 23.2958V35.577C209.652 35.8047 209.652 36.4166 209.852 36.5589C210.051 36.7012 210.179 37.0001 210.35 37.0001H237.259C237.43 37.0001 237.601 36.6727 237.744 36.5589C237.886 36.445 237.929 35.9754 237.929 35.7335C237.929 31.6493 237.929 27.4654 237.929 23.3812C237.929 19.297 238.413 14.5154 237.06 10.3885Z"
+              fill="white"
+            />
+          </g>
+        </svg>
+        <div>
+          <h2>Enterate De Las Últimas Novedades</h2>
+          <div class="nav-links-footer">
+            <button>
+              <p id="footer-button">SUSCRIBITE A NUESTRO NEWSLETER</p>
+              <svg width="20" viewBox="0 0 20 15" fill="none">
+                <path
+                  d="M11.4395 1L17.9395 7.5L11.4395 14"
+                  stroke="black"
+                  stroke-width="2"
+                />
+                <path d="M17.4689 7.5H1" stroke="black" stroke-width="2" />
+              </svg>
+            </button>
+            <p>info@boronstudio.com</p>
+            <svg width="37" height="26" viewBox="0 0 37 26" fill="none">
+              <path
+                d="M9.66747 0C0 0 0 2.78945 0 9.64831V16.3517C0 22.8749 1.36913 26 9.66747 26H27.3325C34.8275 26 37 24.1731 37 16.3517V9.64831C37 2.42865 36.6347 0 27.3325 0H9.66747ZM14.72 7.57223L24.6927 12.8169L14.72 18.0953V7.57223Z"
+                fill="#77D7DB"
+              />
+            </svg>
+            <svg width="34" height="27" viewBox="0 0 34 27" fill="none">
+              <path
+                d="M10.6803 26.9999C23.5102 26.9999 30.5306 16.848 30.5306 8.05925C30.5306 7.77364 30.5306 7.48802 30.517 7.20241C31.8775 6.26771 33.0612 5.08642 34 3.74928C32.7483 4.28154 31.4014 4.632 29.9864 4.80076C31.4286 3.9829 32.5306 2.67176 33.0612 1.11393C31.7143 1.87986 30.2177 2.42512 28.6259 2.72371C27.3469 1.42551 25.5374 0.620605 23.5374 0.620605C19.6871 0.620605 16.5578 3.60651 16.5578 7.28041C16.5578 7.79969 16.6259 8.30585 16.7347 8.79916C10.9388 8.52654 5.79591 5.86537 2.35374 1.84096C1.7551 2.82759 1.41496 3.96988 1.41496 5.19019C1.41496 7.50097 2.65307 9.53919 4.51702 10.7335C3.37416 10.6946 2.29932 10.3961 1.36054 9.90274C1.36054 9.9287 1.36054 9.95468 1.36054 9.99362C1.36054 13.2131 3.7687 15.9133 6.95237 16.5235C6.36734 16.6793 5.7551 16.7572 5.11564 16.7572C4.66666 16.7572 4.23129 16.7183 3.80952 16.6404C4.69388 19.2887 7.27891 21.21 10.3265 21.2619C7.93197 23.0534 4.92518 24.118 1.65987 24.118C1.10205 24.118 0.544218 24.092 0 24.0271C3.07483 25.8965 6.74831 26.9999 10.6803 26.9999Z"
+                fill="#77D7DB"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+      <ul id="links">
+        <li><a href="#about">Acerca de</a></li>
+        <li><a href="#proyects">Proyectos</a></li>
+        <li><a href="#repository">Repositorios</a></li>
+        <li><a href="#news">Novedades</a></li>
+        <li><a href="#contact">Contacto</a></li>
+        <li>Líneas de Investigación</li>
+        <li>información Financiera</li>
+      </ul>
+    </footer>
+  </body>
+</html>
