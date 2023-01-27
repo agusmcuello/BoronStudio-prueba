@@ -1,4 +1,4 @@
-# BoronStudio-prueba
+# Boron Studio. Prueba Técnica
 ---
 ##Proyecto realizado únicamente con HTML, CSS y Javascript. 
 ---
